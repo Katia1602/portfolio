@@ -1,7 +1,6 @@
 ---
-title: "Portfolio"
+title: "Spatial Analysis Portfolio"
 author: "Katia Krotova"
-date: "10/12/2021"
 output: html_document
 ---
 
@@ -9,43 +8,27 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-This is an example of a portfolio that someone might assemble to demonstrate the skills they have developed in VIS 2128. I have created this page using RMarkdown. There are fancier tools out there for creating and hosting webpages, and you are welcome to use any of those if you like. The advantage of this approach is that you can create your webpage directly from RStudio.
+# Map of Los Angeles, California
+This interactive map shows the percentage of Asian residents in each census block Los Angeles County, California. This map is based on the data from the 2010 Decennial Census.
 
-This example uses the default theme, since I haven't specified a theme in the YAML header.
-
-Your portfolio should demonstrate each of the following skills (not all of which are demonstrated in this example):
-
-* Displaying multiple vector layers on the same map
-* Calculating and displaying relationships among point and polygon layers based on distance
-* Aggregating point data to a layer of polygons
-* Calculating and displaying accessibility, based on travel time
-* Converting between raster layers and vector layers
-* Displaying raster data on a map
-* Georeferencing a raster image
-* Displaying data on an interactive map
-
-# Maps of Boston
-Here are two maps of Boston. I might include some text here about this set of maps.
-
-## Interactive Map
 This interactive map demonstrates the following skills: 
 
 * Displaying data on an interactive map
 
 [![](thumbnails/LA_Interactive.jpg)](https://katia1602.github.io/portfolio/fullsize/LA_Asian.html){target="_blank"}
 
-# Maps of San Luis Obispo
-Here are two maps of San Luis Obispo, California. I might include some text here as well.
+# Maps of Salt Lake City, Utah 
+The following three maps show access to pharmacies and transit stops in Salt Lake City, UT.  Although the Salt Lake Valley has historically been a very car-dependent area, the city has focused on improving networks for active modes of transport over the last few decades. I therefore decided to look at accessibility through the modes of  biking and walking.
 
-## Isochrones
-This map shows isochrones based on transit travel times to the nearest pharmacy. It demonstrates the following skills:
+## Bike Accessibility 
+This map shows isochrones based on transit travel times by bike to the nearest pharmacy. It demonstrates the following skills:
 
 * Displaying multiple vector layers on the same map
 * Calculating and displaying accessibility, based on travel time
 
 [![](thumbnails/Bicycle_Isochrones.png)](https://katia1602.github.io/portfolio/fullsize/Bicycle_Isochrones.png){target="_blank"}
 
-## Accessibility
+## Pedestrian Accessibility
 This map shows pedestrian accessibility based on a distance-decay function of the walking time to the nearest transit stop. It demonstrates the following skills:
 
 * Displaying multiple vector layers on the same map
@@ -54,26 +37,25 @@ This map shows pedestrian accessibility based on a distance-decay function of th
 
 [![](thumbnails/Raster_Map.png)](https://katia1602.github.io/portfolio/fullsize/Raster_Map.png){target="_blank"}
 
-## Contours
-This map shows pedestrian accessibility based on a distance-decay function of the walking time to the nearest transit stop. It demonstrates the following skills:
+## Contour Map
+This map also shows pedestrian access to transit but was created slightly differently to the above map. I recreated the polygon layer on a square grid rather than a hexagonal grid and then made the polygon boundaries appear as countours.
 
 * Displaying multiple vector layers on the same map
 * Calculating and displaying accessibility, based on travel time
 * Displaying raster data on a map
 * Converting between raster layers and vector layers
 
+[![](thumbnails/ContourMap.png)](https://katia1602.github.io/portfolio/fullsize/Contour_Map.png){target="_blank"}
 
-[![](thumbnails/ContourMap.png)](https://katia1602.github.io/portfolio/fullsize/CountourMap.png){target="_blank"}
-
-## Spatial Relationships
-This map shows the number of community centers, provided by the City of Boston and most recently updated in 2018, within each neighborhood. This map shows there are between 0 and 5 centers in each neighborhood and that the greatest number of community centers are located in the Dorchester neighborhood.
+## Map of Boston, MA
+This map shows the number of community centers, provided by the City of Boston and most recently updated in 2018, within each neighborhood. This map shows that there are between 0 and 5 centers in each neighborhood and that the greatest number of community centers are located in the Dorchester neighborhood.
 
 * Calculating and displaying relationships among point and polygon layers based on distance
 * Aggregating point data to a layer of polygons
 
 [![](thumbnails/Boston_CC.png)](https://katia1602.github.io/portfolio/fullsize/Boston_CC.png){target="_blank"}
 
-## Georerencing
+## Map of San Francisco, CA
 This is historic map of San Francisco from the early 20th century. It shows the damage to the city caused by the earthquake of 1906. 
 
 * Georeferencing a raster image
